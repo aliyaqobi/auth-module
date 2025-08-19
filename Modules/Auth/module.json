@@ -1,0 +1,13 @@
+{
+    "name": "Auth",
+    "alias": "auth",
+    "description": "Authentication module with login, register and Google OAuth",
+    "keywords": ["auth", "login", "register", "oauth", "google"],
+    "priority": 0,
+    "providers": [
+        "Modules\\Auth\\Providers\\AuthServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
