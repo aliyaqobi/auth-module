@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Modules\Auth\Http\Requests\Frontend\ProfileUpdateRequest;
+use Modules\Auth\Http\Requests\ProfileUpdateRequest;
 use Modules\Auth\Service\UserService;
-use Modules\Auth\Transformers\Frontend\UserResource;
+use Modules\Auth\Transformers\UserResource;
 
 class ProfileController extends ApiController
 {

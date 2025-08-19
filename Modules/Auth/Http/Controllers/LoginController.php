@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
-use Modules\Auth\Http\Requests\Frontend\LoginCodeRequest;
-use Modules\Auth\Http\Requests\Frontend\LoginRequest;
+use Modules\Auth\Http\Requests\LoginCodeRequest;
+use Modules\Auth\Http\Requests\LoginRequest;
 use Modules\Auth\Service\AuthService;
 use Modules\Auth\Service\VerificationService;
-use Modules\Auth\Transformers\Frontend\UserResource;
+use Modules\Auth\Transformers\UserResource;
 
 class LoginController extends ApiController
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
-use Modules\Auth\Http\Requests\Frontend\RegisterCodeRequest;
-use Modules\Auth\Http\Requests\Frontend\RegisterRequest;
+use Modules\Auth\Http\Requests\RegisterCodeRequest;
+use Modules\Auth\Http\Requests\RegisterRequest;
 use Modules\Auth\Service\AuthService;
 use Modules\Auth\Service\VerificationService;
 use Modules\Auth\Service\UsernameService;
-use Modules\Auth\Transformers\Frontend\UserResource;
+use Modules\Auth\Transformers\UserResource;
 
 class RegisterController extends ApiController
 {

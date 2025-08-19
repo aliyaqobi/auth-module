@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Auth\Http\Controllers\Frontend\GoogleOAuthController;
-use Modules\Auth\Http\Controllers\Frontend\LoginController;
-use Modules\Auth\Http\Controllers\Frontend\RegisterController;
-use Modules\Auth\Http\Controllers\Frontend\ProfileController;
-use Modules\Auth\Http\Controllers\Frontend\EmailChangeController;
-use Modules\Auth\Http\Controllers\Frontend\MobileChangeController;
+use Modules\Auth\Http\Controllers\GoogleOAuthController;
+use Modules\Auth\Http\Controllers\LoginController;
+use Modules\Auth\Http\Controllers\RegisterController;
+use Modules\Auth\Http\Controllers\ProfileController;
+use Modules\Auth\Http\Controllers\EmailChangeController;
+use Modules\Auth\Http\Controllers\MobileChangeController;
 
 Route::prefix('auth')->name('auth.')->group(function () {
     // Test route

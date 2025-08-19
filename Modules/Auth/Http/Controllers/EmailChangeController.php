@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
-use Modules\Auth\Http\Requests\Frontend\SendCodeNewEmailChangeRequest;
-use Modules\Auth\Http\Requests\Frontend\VerifyCodeNewEmailChangeRequest;
-use Modules\Auth\Http\Requests\Frontend\VerifyCurrentEmailChangeRequest;
+use Modules\Auth\Http\Requests\SendCodeNewEmailChangeRequest;
+use Modules\Auth\Http\Requests\VerifyCodeNewEmailChangeRequest;
+use Modules\Auth\Http\Requests\VerifyCurrentEmailChangeRequest;
 use Modules\Auth\Service\AuthService;
 use Modules\Auth\Service\UserService;
 use Modules\Auth\Service\VerificationService;

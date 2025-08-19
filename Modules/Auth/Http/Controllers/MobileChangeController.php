@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
-use Modules\Auth\Http\Requests\Frontend\SendCodeNewMobileChangeRequest;
-use Modules\Auth\Http\Requests\Frontend\VerifyCodeNewMobileChangeRequest;
-use Modules\Auth\Http\Requests\Frontend\VerifyCurrentMobileChangeRequest;
+use Modules\Auth\Http\Requests\SendCodeNewMobileChangeRequest;
+use Modules\Auth\Http\Requests\VerifyCodeNewMobileChangeRequest;
+use Modules\Auth\Http\Requests\VerifyCurrentMobileChangeRequest;
 use Modules\Auth\Service\AuthService;
 use Modules\Auth\Service\UserService;
 use Modules\Auth\Service\VerificationService;

@@ -1,17 +1,17 @@
 <?php
 
-namespace Modules\Auth\Http\Requests\Frontend;
+namespace Modules\Auth\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Modules\Auth\Rules\ResetToken;
 
-class SendCodeNewEmailChangeRequest extends FormRequest
+class SendCodeNewMobileChangeRequest extends FormRequest
 {
     public function rules()
     {
         return [
             'country_code' => ['required', 'numeric'],
-            'email'        => ['required', 'email', 'string', 'unique:users'],
+            'mobile'       => ['required', 'string', 'unique:users'],
             'reset_token'  => ['required', new ResetToken()],
         ];
     }

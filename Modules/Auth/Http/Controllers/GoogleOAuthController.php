@@ -1,15 +1,15 @@
 <?php
 
-namespace Modules\Auth\Http\Controllers\Frontend;
+namespace Modules\Auth\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Modules\Auth\Http\Requests\Frontend\GoogleCallbackRequest;
+use Modules\Auth\Http\Requests\GoogleCallbackRequest;
 use Modules\Auth\Service\AuthService;
 use Modules\Auth\Service\GoogleOAuthService;
-use Modules\Auth\Transformers\Frontend\UserResource;
+use Modules\Auth\Transformers\UserResource;
 
 class GoogleOAuthController extends ApiController
 {
